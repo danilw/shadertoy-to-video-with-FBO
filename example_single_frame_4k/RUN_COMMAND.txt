@@ -1,0 +1,9 @@
+
+
+
+
+python ../shadertoy-render.py --output 1.mov --vispy_use=egl --size=3840x2160 --rate=1 --duration=1.0 --time=6969.69 --bitrate=8M main_image.glsl
+
+
+
+python3 for linux
