@@ -43,7 +43,7 @@ To force Zink that is OpenGL to Vulkan translation in Linux:
 
 	__GLX_VENDOR_LIBRARY_NAME=mesa MESA_LOADER_DRIVER_OVERRIDE=zink GALLIUM_DRIVER=zink sh render.sh
 
-Tested - works, I tested with vispy-GLFW backend.
+Tested - works.
 
 Tested2 - it seems it work only with egl vispy backend. ``--vispy_use=egl``
 
