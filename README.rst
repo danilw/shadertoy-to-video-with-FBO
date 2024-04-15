@@ -1,7 +1,8 @@
 shadertoy-render
 ================
 
-**What is it**: creating video from shaders on Shadertoy. This my fork has many changes and fixes from original.
+**What is it**: creating video from shaders on Shadertoy with buffers support.
+*This setup is complete junk-solution, but it works.*
 
 **Windows OS** support instruction, **how to launch it on Windows OS** scroll down. (tested/works on Linux and Windows)
 
