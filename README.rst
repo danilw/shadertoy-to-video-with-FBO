@@ -26,8 +26,6 @@ My `Youtube playlist <https://youtube.com/playlist?list=PLzDEnfuEGFHv9AF11F0UYXX
 
 **Note 2023**, about vispy and "too many backends":
 
------------------
-
 If you have error on using glfw backend that I set as default - change it in `867 line in shadertoy-render.py <https://github.com/danilw/shadertoy-to-video-with-FBO/blob/master/shadertoy-render.py#L867>`_
 
 For example: *vispy.use('egl')* or add parameter ``--vispy_use=egl``
@@ -37,7 +35,6 @@ I had some errors with glfw on AMD GPU, and I just keep as it is using glfw by d
 -----------------
 
 **Note 2023**, about Linux-OpenGL-Vulkan:
------------------
 
 To force Zink that is OpenGL to Vulkan translation in Linux:
 
@@ -70,7 +67,6 @@ Tested2 - it seems it work only with egl vispy backend. ``--vispy_use=egl``
 -----------------
 
 **Shader uniforms:**
------------------
 
 ``iChannel0 to iChannel3`` uniform is **Buf0.glsl to Buf3.glsl file**.
 
@@ -86,7 +82,6 @@ if you want/need **to change order of iChannels** - added renamed copy ``u_chann
 -----------------
 
 **Examples:**
------------------
 
 **example_one_shader** - New shader on Shadertoy, single shader example.
 
@@ -106,7 +101,6 @@ Command to encode example:
 -----------------
 
 **Command line options:**
------------------
 
 ``--output 1.mp4`` - file name for video file.
 
@@ -133,7 +127,6 @@ Command to encode example:
 -----------------
 
 **When recording visual result not equal to Shadertoy:**
------------------
 
 Many shaders(even top rated) on Shadertoy may use lots of unitialized variables and clamp(1,0,-1)/pow(-1,2)/(0/0)/normalize(0)...etc, that work in not same way(have not same result) in OpenGL and webbrowser Angle/GLES, black screen(or other random "results") because of this. (also sin-noise could be broken in OpenGL) 
 
@@ -146,7 +139,6 @@ And check for used **buffers and textures parameters**, this script has *clamp_t
 -----------------
 
 Windows OS instruction to launch: (tested summer 2022 works)
------------------
 
 1. **install** `python3 <https://www.python.org/downloads/>`_ python 3.10 or latest, **click Add Python to PATH** in setup Window
 2. press *Win+R* write **cmd** to launch console
@@ -173,7 +165,6 @@ Windows OS instruction to launch: (tested summer 2022 works)
 -----------------
 
 Useful ffmpeg commands:
------------------
 
 To **exptract .png frames with Alpha without compression**:
 
@@ -204,7 +195,6 @@ not best quality (work on Windows and Linux)
 -----------------
 
 Useful ImageMagic commands:
------------------
 
 When used *import imageio* in Python script - *imageio* does not support indexed color, and *convert* or *ffmpeg* sometime can convert images to indexed format, look *"correct RGBA png color format"* below to convert back.
 
