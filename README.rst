@@ -24,9 +24,10 @@ My `Youtube playlist <https://youtube.com/playlist?list=PLzDEnfuEGFHv9AF11F0UYXX
 -----------------
 
 **Note 2023**, about vispy and "too many backends":
+
 -----------------
 
-If you have error on using glfw backend that I set as default - change it in `864 line in shadertoy-render.py <https://github.com/danilw/shadertoy-to-video-with-FBO/blob/master/shadertoy-render.py#L864>`_
+If you have error on using glfw backend that I set as default - change it in `867 line in shadertoy-render.py <https://github.com/danilw/shadertoy-to-video-with-FBO/blob/master/shadertoy-render.py#L867>`_
 
 For example: *vispy.use('egl')* or add parameter ``--vispy_use=egl``
 
