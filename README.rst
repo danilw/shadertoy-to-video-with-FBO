@@ -192,6 +192,18 @@ not best quality (work on Windows and Linux)
 
         ffmpeg -i video.mp4 -vf "fps=25,scale=640:-1:flags=lanczos" output.gif
 
+compress final gif more: (linux only)
+
+.. code-block:: bash
+
+        mogrify -coalesce -layers optimize -fuzz 5% output.gif 
+        magick output.gif -append -unique-colors -dither None -colors 96 /tmp/colors.gif
+        magick output.gif -remap /tmp/colors.gif tmp2.gif 
+        rm /tmp/colors.gif
+        gifsicle -o "out.gif" -i -O3 --lossy=50 -j8 "tmp2.gif"
+        rm tmp2.gif
+
+
 -----------------
 
 Useful ImageMagic commands:
