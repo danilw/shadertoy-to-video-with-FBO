@@ -10,6 +10,13 @@ My `Youtube playlist <https://youtube.com/playlist?list=PLzDEnfuEGFHv9AF11F0UYXX
 
 **Contact**: `Join discord server <https://discord.gg/JKyqWgt>`_
 
+Contact with me:
+================
+
+**Matrix-chat room** ``#Shadertoy:envs.net`` 
+
+invite link `matrix.to <https://matrix.to/#/#Shadertoy:envs.net>`_ *(use web UI Element if you dont have account)*
+
 -----------------
 
 .. NOT WORKING ANYMORE commented
