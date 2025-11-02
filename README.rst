@@ -16,6 +16,8 @@ Contact with me:
 
 invite link `matrix.to <https://matrix.to/#/#Shadertoy:envs.net>`_ *(use web UI Element if you dont have account)*
 
+*or email look my github profile page, but matrix is real time connection*
+
 -----------------
 
 .. NOT WORKING ANYMORE commented
