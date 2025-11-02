@@ -38,7 +38,7 @@ If you have error on using glfw backend that I set as default - change it in `86
 
 For example: *vispy.use('egl')* or add parameter ``--vispy_use=egl``
 
-I had some errors with glfw on AMD GPU, and I just keep as it is using glfw by default because last year I had error with egl backend on Nvidia and egl not working anymore `in Colab <https://github.com/vispy/vispy/issues/2469#issuecomment-1513538902>`_ - *Vispy and OpenGL is complete mess*, you can contact me on discord link above. *For me now in 2023 - glfw working on Nvidia, and egl on AMD.*
+I had some errors with glfw on AMD GPU, and I just keep as it is using glfw by default because last year I had error with egl backend on Nvidia and egl not working anymore `in Colab <https://github.com/vispy/vispy/issues/2469#issuecomment-1513538902>`_ - *Vispy and OpenGL is complete mess*, you can contact me links above. *For me now in 2023 - glfw working on Nvidia, and egl on AMD.*
 
 -----------------
 
