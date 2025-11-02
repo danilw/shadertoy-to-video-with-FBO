@@ -8,7 +8,6 @@ shadertoy-render
 
 My `Youtube playlist <https://youtube.com/playlist?list=PLzDEnfuEGFHv9AF11F0UYXXx9sdfXqu8M>`_ - videos created from my shaders using this script. `GLSL Auto Tetris video <https://youtu.be/rcgpwVLydLw>`_ also recorded by this script.
 
-**Contact**: `Join discord server <https://discord.gg/JKyqWgt>`_
 
 Contact with me:
 ================
