@@ -126,7 +126,7 @@ Command to encode example:
 
 -----------------
 
-``--skip_frames_every_frame`` **useful for TAA** - render to video only (iFrame%this_val)==(this_val-1) - TAA can render frames and for video use only accumulated - similar usage. Remember about feedback-accumulation - and iFrame still going. If you set ``--skip_frames_every_frame=12`` - means every 11 frames will be skiped and frame 12 is rendered to video.
+``--skip_frames_every_frame`` **useful for TAA** - render to video only ``(iFrame%this_val)==(this_val-1)`` - TAA can render frames and for video use only accumulated - similar usage. Remember about feedback-accumulation - and iFrame still going. If you set ``--skip_frames_every_frame=12`` - means every 11 frames will be skiped and frame 12 is rendered to video.
 
 ``--render_and_skip_frames`` **same as above** - useful for TAA shaders to make 1 frame screenshot - skip frames only once at start.
 
