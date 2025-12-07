@@ -70,7 +70,7 @@ Tested2 - it seems it work only with egl vispy backend. ``--vispy_use=egl``
 
 *Cubemap* - look example Cubemap, it "emulated" in Buffers, means interpolation on edges is broken. **When recording cubemap as textures** (from 6 sides) - remember to set *rep=False* in functions *set_Buf_texture_input* and *set_texture_input* in *shadertoy-render.py*, to set texture as clamp_to_edge. Also - You can emulate entire *cubemap-shader-feedback* setup, if you do - remember that to read entire cubemap you need to copy all sides to its own buffer - create more buffers and define them in `line 41 <https://github.com/danilw/shadertoy-to-video-with-FBO/blob/master/shadertoy-render.py#L46C8-L46C8>`_ and `line 85 <https://github.com/danilw/shadertoy-to-video-with-FBO/blob/master/shadertoy-render.py#L85>`_ add iChannel u_channel uniforms, I do not provide example for this because this is even biger-junk-setup, il make something better for next time I need it, example is only for single-cubemap with no feedback. I did record `this <https://www.youtube.com/watch?v=Q2flsB-cQCo>`_ `two <https://www.youtube.com/watch?v=v8O2ZEeMiRE>`_ 360 vidos with this setup - but this setup is `giga junk <https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/gigaj.png>`_, even if it works.
 
-*When uploading cubemap videos to youtube* - remember about "youtube downscale" that on every non-original video size youtube downcale with no interpolation of panorama-edge - there will be line, this is not "recording bug" this is only youtube downscale. For example I use ``--size=2048x2048 --panorama_rec_size=3840x2160`` for 4k panorama.
+*When uploading cubemap videos to youtube* - remember about "youtube downscale" that on every non-original video size youtube downcale with no interpolation of panorama-edge - there will be line, this is not "recording bug" this is only youtube downscale. For example I use ``--size=1024x1024 --panorama_rec_size=3840x2160`` for 4k panorama.
 
 -----------------
 
@@ -126,7 +126,7 @@ Command to encode example:
 
 -----------------
 
-``--skip_frames_every_frame`` **useful for TAA** - render to video only iFrame%this_val - TAA can render frames and for video use only accumulated - similar usage. Remember about feedback-accumulation - and iFrame still going. If you set ``--skip_frames_every_frame=12`` - means every 11 frames will be skiped and frame 12 is rendered to video.
+``--skip_frames_every_frame`` **useful for TAA** - render to video only (iFrame%this_val)==0 - TAA can render frames and for video use only accumulated - similar usage. Remember about feedback-accumulation - and iFrame still going. If you set ``--skip_frames_every_frame=12`` - means every 11 frames will be skiped and frame 12 is rendered to video.
 
 ``--render_and_skip_frames`` **same as above** - useful for TAA shaders to make 1 frame screenshot - skip frames only once at start.
 
