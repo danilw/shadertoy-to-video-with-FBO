@@ -12,9 +12,9 @@ My `Youtube playlist <https://youtube.com/playlist?list=PLzDEnfuEGFHv9AF11F0UYXX
 Contact with me:
 ================
 
-**Matrix-chat room** ``#Shadertoy:envs.net`` 
+**Matrix-chat room** ``#shadertoy:matrix.org`` 
 
-invite link `matrix.to <https://matrix.to/#/#Shadertoy:envs.net>`_ *(use web UI Element if you dont have account)*
+invite link `matrix.to <https://matrix.to/#/#shadertoy:matrix.org>`_ *(use web UI Element if you dont have account)*
 
 *or email look my github profile page, but matrix is real time connection*
 
