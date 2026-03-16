@@ -188,6 +188,14 @@ Two options:
 
 To convert **Video to Gif** ffmpeg commands:
 
+alternative to gif - **use webp**
+
+.. code-block:: bash
+
+        ffmpeg -i 1.mp4 -vcodec libwebp -lossless 0 -compression_level 3 -q:v 50 -filter:v scale=480:-1 -loop 0 output.webp
+
+gif:
+
 best quality (Linux only) delay = 100/fps
 
 .. code-block:: bash
